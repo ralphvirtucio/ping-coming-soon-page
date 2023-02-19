@@ -88,3 +88,64 @@ select {
   --fw-600: 600;
   --fw-700: 700;
 }
+
+.ping__container {
+  padding-inline: 1rem;
+  /* text-align: center; */
+}
+
+
+.ping__main-heading {
+  color: var(--neutral-color-1);
+  font-weight: var(--fw-300);
+  margin-block-end: 2rem;
+
+}
+
+.ping__main-heading strong {
+  color: var(--neutral-color-2);
+  font-weight: var(--fw-700);
+}
+
+.ping__message {
+  color: var(--neutral-color-2);
+  font-weight: var(--fw-300);
+  margin-block-end: 2rem;
+}
+
+.ping__section {
+  margin-block-end: 5rem;
+}
+
+.email__input {
+  border: 1px solid var(--secondary-color-1);
+  border-radius: 100px;
+  padding-block: .85rem;
+  padding-inline: 3rem;
+  width: 100%;
+  font-family: inherit;
+  font-weight: var(--fw-300);
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.email__input::placeholder {
+  color: hsla(223, 100%, 88%, 0.75);
+}
+
+.submit-btn {
+  border: none;
+  background-color: var(--primary-color-1);
+  color: #fff;
+  font-weight: var(--fw-600);
+  border-radius: 100px;
+  padding-block: .85rem;
+  box-shadow: 0 7px 12px rgba(79, 125, 243, 0.5);
+
+}
