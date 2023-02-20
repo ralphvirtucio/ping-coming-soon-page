@@ -90,8 +90,20 @@ select {
 }
 
 .ping__container {
-  padding-inline: 1rem;
-  /* text-align: center; */
+  padding-inline: 2rem;
+  padding-block: 5rem;
+  text-align: center;
+}
+
+.ping__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 3rem;
+}
+
+.ping__main-page {
+  margin-block-end: 10rem;
 }
 
 
@@ -148,4 +160,36 @@ form {
   padding-block: .85rem;
   box-shadow: 0 7px 12px rgba(79, 125, 243, 0.5);
 
+}
+
+
+.social-media__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-block-end: 3rem;
+}
+
+.social-media__link {
+  border: 1px solid var(--secondary-color-1);
+  border-radius: 100px;
+  display: flex;
+  padding: .65rem;
+}
+
+
+.social-media__link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: var(--primary-color-1);
+
+}
+
+.copyright {
+  font-size: .75rem;
+  color: var(--neutral-color-1);
 }
