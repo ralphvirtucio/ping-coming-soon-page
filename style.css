@@ -36,6 +36,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -93,6 +96,8 @@ select {
   padding-inline: 2rem;
   padding-block: 5rem;
   text-align: center;
+  max-width: 50rem;
+
 }
 
 .ping__header {
@@ -137,7 +142,6 @@ select {
   width: 100%;
   font-family: inherit;
   font-weight: var(--fw-300);
-
 }
 
 form {
@@ -192,4 +196,46 @@ form {
 .copyright {
   font-size: .75rem;
   color: var(--neutral-color-1);
+}
+
+@media only screen and (min-width: 1024px) {
+  .ping__container {
+    padding-block-end: 2rem;
+  }
+
+
+  .ping__main-heading {
+    font-size: 3rem;
+    margin-block-end: 1rem;
+  }
+
+  .ping__main-page {
+    margin-block-end: 5rem;
+  }
+
+  .ping__message {
+    font-size: var(--fs-body);
+  }
+
+  .ping__form {
+    flex-direction: row;
+  }
+
+  .email__input {
+    padding-inline: 2rem;
+  }
+
+  .form-control {
+    flex: 2;
+  }
+
+  .submit-btn {
+    flex: 1;
+  }
+
+  .social-media__list {
+
+    margin-block-end: 1.5rem;
+  }
+
 }
