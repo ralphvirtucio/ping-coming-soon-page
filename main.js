@@ -1,19 +1,25 @@
 // Basic Submission of Form
 
+// 1. Get the value from the form
 const enteredEmail = document.querySelector('.email__input');
-const pingForm = document.querySelector('.ping__form');
+const form = document.querySelector('.ping__form');
 
-let email;
+// enteredEmail.addEventListener('change', (e) => {
 
-enteredEmail.addEventListener('change', (e) => {
-  email = e.target.value;
-});
+// });
 
-pingForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const enteredEmail = event.target[0].value;
 
-  console.log(e.target[0].value);
+  if (enteredEmail.trim() === '') {
+    console.log('email field should not be empty');
+    return;
+  }
 
-  email = '';
-  e.target[0].value = '';
+  if (enteredEmail.includes('@')) {
+    console.log('correct email format');
+  } else {
+    console.log('wrong email format');
+  }
 });
