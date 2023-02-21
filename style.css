@@ -156,33 +156,32 @@ form {
   gap: .5rem;
 }
 
-/* ! WIP ACTIVE STATES */
-/* ************* */
+
+.hide {
+  display: none;
+}
+
 .invalid-message {
   font-style: italic;
   color: var(--secondary-color-2);
   font-size: .85rem;
-  align-self: flex-start;
-  padding-inline-start: 2rem;
+
 }
 
 
 
-/* .input__invalid {
+.input__invalid {
   border: 1px solid var(--secondary-color-2);
 
-} */
+}
 
-/* .email__input:invalid {
-  border: 1px solid var(--secondary-color-2);
-
-} */
-/* ************* */
 
 
 .email__input::placeholder {
   color: hsla(223, 100%, 88%, 0.75);
 }
+
+
 
 .submit-btn {
   border: none;
@@ -190,9 +189,14 @@ form {
   color: #fff;
   font-weight: var(--fw-600);
   border-radius: 100px;
-  padding-block: .85rem;
+  padding-block: 0.85rem;
   box-shadow: 0 7px 12px rgba(79, 125, 243, 0.5);
   cursor: pointer;
+  transition: background-color, .2s;
+}
+
+.submit-btn:hover {
+  background-color: hsla(223, 87%, 63%, 0.8);
 }
 
 
@@ -212,6 +216,16 @@ form {
   border-radius: 100px;
   display: flex;
   padding: .65rem;
+  background-color: #fff;
+  transition: background-color, .2s;
+}
+
+.social-media__link:hover {
+  background-color: var(--primary-color-1);
+}
+
+.social-media__link:hover svg {
+  fill: #fff;
 }
 
 
@@ -219,7 +233,6 @@ form {
   width: 1.25rem;
   height: 1.25rem;
   fill: var(--primary-color-1);
-
 }
 
 .copyright {
@@ -256,6 +269,11 @@ form {
 
   .form-control {
     flex: 2;
+  }
+
+  .invalid-message {
+    align-self: flex-start;
+    padding-inline-start: 2rem;
   }
 
   .submit-btn {
