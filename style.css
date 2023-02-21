@@ -178,7 +178,8 @@ form {
 
 
 .email__input::placeholder {
-  color: hsla(223, 100%, 88%, 0.75);
+  /* color: hsla(223, 100%, 88%, 0.75); */
+  color: var(--secondary-color-1)
 }
 
 
