@@ -242,7 +242,7 @@ form {
 
 @media only screen and (min-width: 1024px) {
   .ping__container {
-    padding-block-end: 2rem;
+    padding-inline: 4rem;
   }
 
 
